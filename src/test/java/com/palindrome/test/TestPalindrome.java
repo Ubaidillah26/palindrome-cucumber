@@ -1,13 +1,12 @@
 package com.palindrome.test;
 
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-import io.cucumber.testng.CucumberOptions;
+import io.cucumber.java.en.When;
 
-@CucumberOptions(tags="",
-					features= "src/test/resources/01.Palindrome.feature",
-					glue= "com.palindrome.test",
-					plugin= {"pretty", "html:target/cucumber-reports.html"})
+public class TestPalindrome {
 
-public class TestPalindrome extends AbstractTestNGCucumberTests{
-
+	@When("User input text Palindrome")
+	public void user_input_text_palindrome() {
+		
+	}
+	
 }

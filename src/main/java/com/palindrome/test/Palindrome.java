@@ -5,11 +5,10 @@ import io.cucumber.java.en.When;
 public class Palindrome {
 
 	public static void main(String[] args){
-		new Palindrome().user_input_text_palindrome("kasur ini rusak");		
+		new Palindrome().palindrome("kasur ini rusak");		
 	}
 	
-	@When("User input text Palindrome")
-	public void user_input_text_palindrome(String kasur){		
+	public void palindrome(String kasur){		
 		String poli = "";		
 
 		for(int i=kasur.length();i>0;i--){
